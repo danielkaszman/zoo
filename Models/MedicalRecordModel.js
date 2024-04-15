@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const MedicalRecordSchema = new mongoose.Schema({
   AnimalID: {
-    type: Number,
+    type: String,
     required: true,
   },
   VeteritarianID: {
-    type: Number,
+    type: String,
     required: true,
   },
   Diagnosis: {
@@ -14,10 +14,6 @@ const MedicalRecordSchema = new mongoose.Schema({
     required: true,
   },
   Treatment: {
-    type: String,
-    required: true,
-  },
-  Medication: {
     type: String,
     required: true,
   },

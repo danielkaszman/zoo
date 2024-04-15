@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const FeedingSchema = new mongoose.Schema({
   AnimalID: {
-    type: Number,
+    type: String,
     required: true,
   },
   KeeperID: {
-    type: Number,
+    type: String,
     required: true,
   },
   FeedingNote: {
